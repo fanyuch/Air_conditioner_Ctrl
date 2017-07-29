@@ -1,0 +1,402 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\KTMNGJ.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KTMNGJ.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于 KTMNGJ"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "KTMNGJ Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_KTMNGJ_DIALOG DIALOGEX 0, 0, 315, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "KTMNGJ"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "采集数据",IDC_STATIC,7,36,159,184
+    LTEXT           "A相电压",IDC_STATIC,21,51,48,12
+    LTEXT           "B相电压",IDC_STATIC,21,70,48,12
+    LTEXT           "C相电压",IDC_STATIC,21,89,48,12
+    LTEXT           "A相电流",IDC_STATIC,21,107,48,12
+    LTEXT           "B相电流",IDC_STATIC,21,127,48,10
+    LTEXT           "C相电流",IDC_STATIC,21,146,48,10
+    LTEXT           "温度",IDC_STATIC,21,165,48,10
+    LTEXT           "功率",IDC_STATIC,21,183,48,10
+    EDITTEXT        IDC_EDIT1,91,51,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,91,70,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,91,89,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,91,107,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,91,127,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,91,146,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,91,165,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,91,184,45,12,ES_AUTOHSCROLL
+    GROUPBOX        "控制命令",IDC_STATIC,168,36,131,184
+    LTEXT           "制冷模式  温度：",IDC_STATIC_ZL,174,51,59,11
+    LTEXT           "制热模式  温度：",IDC_STATIC_ZR,174,73,55,11
+    LTEXT           "除湿模式",IDC_STATIC_CS,174,95,42,11
+    LTEXT           "自动模式",IDC_STATIC_ZD,174,117,42,11
+    LTEXT           "遥控关机",IDC_STATIC_YKG,174,139,42,11
+    LTEXT           "遥控开机",IDC_STATIC_YKK,174,161,42,11
+    LTEXT           "地址",IDC_STATIC,19,18,27,11
+    LTEXT           "端口号",IDC_STATIC,168,18,34,12
+    PUSHBUTTON      "打开",IDC_BUTTON_COLLECT,259,18,34,12
+    COMBOBOX        IDC_COMBO_ADDR,42,18,64,94,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PORT,202,18,34,95,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,91,203,45,12
+    LTEXT           "",IDC_STATIC_ZLWD,241,51,24,8
+    LTEXT           "",IDC_STATIC_ZRWD,241,70,24,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "KTMNGJ.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "KTMNGJ.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_KTMNGJ_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_KTMNGJ_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_ADDR, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMBO_ADDR, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_PORT, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_PORT, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_PORT, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_PORT, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_PORT, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_PORT, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_PORT, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_PORT, 0x403, 3, 0
+0x3631, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 KTMNGJ(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\KTMNGJ.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
